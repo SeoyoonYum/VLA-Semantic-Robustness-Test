@@ -46,16 +46,12 @@ Natural language mutations (synonyms, passive voice, spatial rephrasing, etc.) t
 ## Technical Constraints
 
 ### Hardware Requirements
-- **VRAM:** 16GB (strict limit)
 - **GPU Options:**
-  - Single T4 GPU (cloud)
-  - Local RTX GPU (if available)
-- **Memory Management:** All code must respect 16GB VRAM constraint
+  - RTX GPU (cloud)
 
 ### Model Specifications
 - **Model:** OpenVLA-7B
-- **Quantization:** **4-bit (bitsandbytes) is MANDATORY**
-  - No exceptions - model must fit within 16GB VRAM
+- **Quantization:** 
   - Use `bitsandbytes` library for quantization
   - Quantization config must be consistent across all experiments
 
@@ -130,6 +126,14 @@ Natural language mutations (synonyms, passive voice, spatial rephrasing, etc.) t
 - **Baseline:** Original template instructions (no mutations)
 - Baseline tested with same sample size: 3 Tasks × 10 Trials = 30 episodes
 - All mutations compared against baseline
+
+### Interface Alignment Phase (MANDATORY BEFORE MUTATIONS)
+- **Goal:** Ensure the policy–simulator interface is aligned so robustness results are meaningful.
+- **Action Scaling Calibration:** Tune translation/rotation scaling to produce stable, controllable motion.
+- **Fixed Camera:** Lock a single camera name, resolution, and pose for all experiments.
+- **Heuristic Grasp (if needed):** Apply a minimal grasp aid (e.g., sticky close or close-on-proximity).
+- **Baseline SR Threshold:** Must achieve **SR ≥ 90%** on the chosen task(s) before any mutations.
+- **Exit Criteria:** Document final scaling, camera settings, grasp heuristic, and seeds; do not change afterward.
 
 ### Randomization
 - Trial order randomized within each task-mutation combination
@@ -393,9 +397,8 @@ vla_semantic_robustness/
 
 ### Key Assumptions
 1. SIMPLER Simulator API is stable and consistent
-2. 4-bit quantization does not significantly alter model behavior for comparison purposes
-3. 10 trials per condition provides sufficient statistical power
-4. Mutations maintain semantic equivalence (to be validated)
+2. 10 trials per condition provides sufficient statistical power
+3. Mutations maintain semantic equivalence (to be validated)
 
 ### Known Limitations
 1. Limited to 3 tasks (may not generalize)
@@ -415,7 +418,6 @@ vla_semantic_robustness/
 ## Quick Reference Checklist
 
 ### Before Starting Experiment
-- [ ] Model loaded with 4-bit quantization
 - [ ] SIMPLER simulator initialized
 - [ ] Logging configured
 - [ ] Results CSV file created
