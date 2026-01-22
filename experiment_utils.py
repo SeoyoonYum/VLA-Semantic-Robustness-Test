@@ -46,3 +46,4 @@ def append_csv(path: str, fieldnames: Iterable[str], row: Dict[str, object]) -> 
             writer.writeheader()
         writer.writerow(row)
 
+

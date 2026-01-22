@@ -6,10 +6,12 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import warnings
 from dataclasses import dataclass
 from typing import Dict, Iterable, List, Optional
 
 import numpy as np
+from tqdm import tqdm
 
 # Avoid importing torch via transformers in Octo path (fixes cuDNN mismatch).
 os.environ.setdefault("TRANSFORMERS_NO_TORCH", "1")
@@ -105,6 +107,29 @@ def _augment_ld_library_path() -> None:
     os.environ["LD_LIBRARY_PATH"] = ":".join(parts)
 
 
+def _suppress_noisy_warnings() -> None:
+    # Keep user-facing logs clean; Octo/SIMPLER emit a lot of non-critical warnings.
+    warnings.filterwarnings("ignore", category=UserWarning)
+    warnings.filterwarnings("ignore", category=FutureWarning)
+    warnings.filterwarnings("ignore", message=".*pad_mask_dict.*")
+    warnings.filterwarnings("ignore", message=".*obs_wrist.*")
+    warnings.filterwarnings("ignore", message=".*DISPLAY environment variable is missing.*")
+    warnings.filterwarnings("ignore", message=".*Continue without GLFW.*")
+
+    # Quiet noisy loggers from dependencies.
+    import logging
+
+    for name in [
+        "tensorflow",
+        "jax",
+        "jaxlib",
+        "absl",
+        "gymnasium",
+        "root",
+    ]:
+        logging.getLogger(name).setLevel(logging.ERROR)
+
+
 def _get_rgb(obs: dict, camera: str) -> np.ndarray:
     cam = obs["image"][camera]
     rgb = cam["rgb"]
@@ -174,7 +199,7 @@ def calibrate_action_scale(task: str, config: RunConfig, logger) -> float:
     best_scale = config.action_scale
     best_sr = -1.0
     logger.info("Starting action scale calibration on %s", task)
-    for scale in config.calibration_scales:
+    for scale in tqdm(config.calibration_scales, desc="Calibrate scales", unit="scale"):
         successes = 0
         for i in range(config.calibration_episodes):
             seed = config.seeds[i % len(config.seeds)]
@@ -197,50 +222,20 @@ def run_baseline(config: RunConfig, action_scale: float, logger) -> float:
     total = 0
     successes = 0
     trial_id = 0
-    for task in config.tasks:
-        for seed in config.seeds:
-            env = simpler_env.make(task)
-            obs, _ = env.reset(seed=seed)
-            instruction = env.get_language_instruction()
-            result = _run_episode(task, instruction, seed, config, action_scale, logger)
-            row = {
-                "trial_id": trial_id,
-                "task": task,
-                "mutation_category": "baseline",
-                "original_instruction": instruction,
-                "mutated_instruction": instruction,
-                "success": result["success"],
-                "distance_to_target": result["distance_to_target"],
-                "episode_length": result["episode_length"],
-                "timestamp": now_iso(),
-                "seed": seed,
-                "notes": result["notes"],
-            }
-            append_csv(config.results_path, DEFAULT_FIELDS, row)
-            successes += int(result["success"])
-            total += 1
-            trial_id += 1
-    sr = successes / max(1, total)
-    logger.info("Baseline SR %.3f (%d/%d)", sr, successes, total)
-    return sr
-
-
-def run_mutations(config: RunConfig, action_scale: float, logger) -> None:
-    trial_id = 0
-    for task in config.tasks:
-        for category in MUTATION_CATEGORIES:
+    total_iters = len(config.tasks) * len(config.seeds)
+    with tqdm(total=total_iters, desc="Baseline", unit="trial") as pbar:
+        for task in config.tasks:
             for seed in config.seeds:
                 env = simpler_env.make(task)
                 obs, _ = env.reset(seed=seed)
-                original = env.get_language_instruction()
-                mutated = generate_mutation(original, category, seed)
-                result = _run_episode(task, mutated, seed, config, action_scale, logger)
+                instruction = env.get_language_instruction()
+                result = _run_episode(task, instruction, seed, config, action_scale, logger)
                 row = {
                     "trial_id": trial_id,
                     "task": task,
-                    "mutation_category": category,
-                    "original_instruction": original,
-                    "mutated_instruction": mutated,
+                    "mutation_category": "baseline",
+                    "original_instruction": instruction,
+                    "mutated_instruction": instruction,
                     "success": result["success"],
                     "distance_to_target": result["distance_to_target"],
                     "episode_length": result["episode_length"],
@@ -249,7 +244,43 @@ def run_mutations(config: RunConfig, action_scale: float, logger) -> None:
                     "notes": result["notes"],
                 }
                 append_csv(config.results_path, DEFAULT_FIELDS, row)
+                successes += int(result["success"])
+                total += 1
                 trial_id += 1
+                pbar.update(1)
+    sr = successes / max(1, total)
+    logger.info("Baseline SR %.3f (%d/%d)", sr, successes, total)
+    return sr
+
+
+def run_mutations(config: RunConfig, action_scale: float, logger) -> None:
+    trial_id = 0
+    total_iters = len(config.tasks) * len(MUTATION_CATEGORIES) * len(config.seeds)
+    with tqdm(total=total_iters, desc="Mutations", unit="trial") as pbar:
+        for task in config.tasks:
+            for category in MUTATION_CATEGORIES:
+                for seed in config.seeds:
+                    env = simpler_env.make(task)
+                    obs, _ = env.reset(seed=seed)
+                    original = env.get_language_instruction()
+                    mutated = generate_mutation(original, category, seed)
+                    result = _run_episode(task, mutated, seed, config, action_scale, logger)
+                    row = {
+                        "trial_id": trial_id,
+                        "task": task,
+                        "mutation_category": category,
+                        "original_instruction": original,
+                        "mutated_instruction": mutated,
+                        "success": result["success"],
+                        "distance_to_target": result["distance_to_target"],
+                        "episode_length": result["episode_length"],
+                        "timestamp": now_iso(),
+                        "seed": seed,
+                        "notes": result["notes"],
+                    }
+                    append_csv(config.results_path, DEFAULT_FIELDS, row)
+                    trial_id += 1
+                    pbar.update(1)
 
 
 def main() -> None:
@@ -261,6 +292,7 @@ def main() -> None:
 
     os.environ["JAX_PLATFORM_NAME"] = args.jax_platform
     _augment_ld_library_path()
+    _suppress_noisy_warnings()
 
     cfg = _load_config(args.config)
     config = _to_run_config(cfg)

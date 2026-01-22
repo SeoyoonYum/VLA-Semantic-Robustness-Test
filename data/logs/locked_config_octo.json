@@ -6,9 +6,9 @@
   ],
   "camera": "3rd_view_camera",
   "max_steps": 120,
-  "action_scale": 1.0,
+  "action_scale": 0.75,
   "heuristic_grasp_steps": 10,
-  "baseline_min_sr": 0.25,
+  "baseline_min_sr": 0.3,
   "seeds": [
     0,
     1,
@@ -31,5 +31,5 @@
   "results_path": "data/results/results_octo.csv",
   "log_path": "data/logs/octo_experiment.log",
   "locked_config_path": "data/logs/locked_config_octo.json",
-  "baseline_sr": 0.8
+  "baseline_sr": 0.6
 }
