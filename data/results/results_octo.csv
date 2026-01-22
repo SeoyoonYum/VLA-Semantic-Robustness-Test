@@ -279,3 +279,223 @@ trial_id,task,mutation_category,original_instruction,mutated_instruction,success
 97,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T07:15:14.191126,7,distance_to_target unavailable
 98,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,41,2026-01-22T07:15:36.659790,8,distance_to_target unavailable
 99,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,53,2026-01-22T07:15:58.235601,9,distance_to_target unavailable
+0,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,45,2026-01-22T07:38:15.318756,0,distance_to_target unavailable
+1,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,35,2026-01-22T07:38:33.944482,1,distance_to_target unavailable
+2,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,62,2026-01-22T07:38:55.225836,2,distance_to_target unavailable
+3,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:39:20.506282,3,distance_to_target unavailable
+4,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,48,2026-01-22T07:39:40.722261,4,distance_to_target unavailable
+5,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,53,2026-01-22T07:40:00.780084,5,distance_to_target unavailable
+6,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:40:27.182730,6,distance_to_target unavailable
+7,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:40:52.413307,7,distance_to_target unavailable
+8,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,47,2026-01-22T07:41:12.671441,8,distance_to_target unavailable
+9,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,83,2026-01-22T07:41:35.264174,9,distance_to_target unavailable
+10,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,45,2026-01-22T07:41:55.273058,10,distance_to_target unavailable
+11,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:42:20.577742,11,distance_to_target unavailable
+12,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,40,2026-01-22T07:42:40.275656,12,distance_to_target unavailable
+13,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,43,2026-01-22T07:43:00.097663,13,distance_to_target unavailable
+14,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:43:26.312760,14,distance_to_target unavailable
+15,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:43:52.049302,15,distance_to_target unavailable
+16,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:44:17.879680,16,distance_to_target unavailable
+17,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,49,2026-01-22T07:44:38.490921,17,distance_to_target unavailable
+18,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,False,,120,2026-01-22T07:45:03.884827,18,distance_to_target unavailable
+19,widowx_put_eggplant_in_basket,baseline,put eggplant into yellow basket,put eggplant into yellow basket,True,,47,2026-01-22T07:45:24.276778,19,distance_to_target unavailable
+0,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:45:50.634758,0,distance_to_target unavailable
+1,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,True,,34,2026-01-22T07:46:09.559845,1,distance_to_target unavailable
+2,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,True,,58,2026-01-22T07:46:31.013031,2,distance_to_target unavailable
+3,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,False,,120,2026-01-22T07:46:57.301792,3,distance_to_target unavailable
+4,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant in yellow basket,False,,120,2026-01-22T07:47:22.931107,4,distance_to_target unavailable
+5,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,position eggplant in yellow basket,False,,120,2026-01-22T07:47:49.251248,5,distance_to_target unavailable
+6,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,position eggplant inside yellow basket,False,,120,2026-01-22T07:48:15.763886,6,distance_to_target unavailable
+7,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant inside yellow basket,False,,120,2026-01-22T07:48:41.563068,7,distance_to_target unavailable
+8,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant in yellow basket,True,,116,2026-01-22T07:49:07.741189,8,distance_to_target unavailable
+9,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:49:33.936653,9,distance_to_target unavailable
+10,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,position eggplant inside yellow basket,False,,120,2026-01-22T07:49:59.925670,10,distance_to_target unavailable
+11,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:50:26.538036,11,distance_to_target unavailable
+12,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:50:52.934507,12,distance_to_target unavailable
+13,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:51:19.123021,13,distance_to_target unavailable
+14,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,False,,120,2026-01-22T07:51:44.835785,14,distance_to_target unavailable
+15,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,False,,120,2026-01-22T07:52:12.292781,15,distance_to_target unavailable
+16,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,set eggplant in yellow basket,False,,120,2026-01-22T07:52:38.308235,16,distance_to_target unavailable
+17,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,position eggplant in yellow basket,False,,120,2026-01-22T07:53:04.077170,17,distance_to_target unavailable
+18,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,place eggplant inside yellow basket,False,,120,2026-01-22T07:53:31.202666,18,distance_to_target unavailable
+19,widowx_put_eggplant_in_basket,synonyms,put eggplant into yellow basket,position eggplant inside yellow basket,False,,120,2026-01-22T07:53:57.228930,19,distance_to_target unavailable
+20,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:54:23.172314,0,distance_to_target unavailable
+21,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:54:49.239856,1,distance_to_target unavailable
+22,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:55:16.243455,2,distance_to_target unavailable
+23,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:55:41.916142,3,distance_to_target unavailable
+24,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:56:07.857438,4,distance_to_target unavailable
+25,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,True,,91,2026-01-22T07:56:31.193258,5,distance_to_target unavailable
+26,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:56:57.950674,6,distance_to_target unavailable
+27,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:57:23.810348,7,distance_to_target unavailable
+28,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:57:49.352257,8,distance_to_target unavailable
+29,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:58:15.166865,9,distance_to_target unavailable
+30,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:58:42.112290,10,distance_to_target unavailable
+31,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:59:07.798979,11,distance_to_target unavailable
+32,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:59:33.556169,12,distance_to_target unavailable
+33,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T07:59:59.237445,13,distance_to_target unavailable
+34,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:00:24.954878,14,distance_to_target unavailable
+35,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:00:52.644001,15,distance_to_target unavailable
+36,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:01:18.198542,16,distance_to_target unavailable
+37,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:01:44.158815,17,distance_to_target unavailable
+38,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:02:09.769438,18,distance_to_target unavailable
+39,widowx_put_eggplant_in_basket,passive_voice,put eggplant into yellow basket,put eggplant into yellow basket should be done.,False,,120,2026-01-22T08:02:37.120586,19,distance_to_target unavailable
+40,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:03:02.761012,0,distance_to_target unavailable
+41,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:03:28.628630,1,distance_to_target unavailable
+42,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:03:54.256122,2,distance_to_target unavailable
+43,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:04:19.672943,3,distance_to_target unavailable
+44,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:04:47.215651,4,distance_to_target unavailable
+45,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:05:13.060148,5,distance_to_target unavailable
+46,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:05:38.501427,6,distance_to_target unavailable
+47,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:06:04.107329,7,distance_to_target unavailable
+48,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:06:29.588847,8,distance_to_target unavailable
+49,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:06:55.269867,9,distance_to_target unavailable
+50,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:07:22.611198,10,distance_to_target unavailable
+51,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:07:48.583346,11,distance_to_target unavailable
+52,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:08:14.619196,12,distance_to_target unavailable
+53,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:08:40.390808,13,distance_to_target unavailable
+54,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:09:06.331394,14,distance_to_target unavailable
+55,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:09:34.134013,15,distance_to_target unavailable
+56,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:10:00.055078,16,distance_to_target unavailable
+57,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:10:26.578815,17,distance_to_target unavailable
+58,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:10:52.218753,18,distance_to_target unavailable
+59,widowx_put_eggplant_in_basket,spatial_reordering,put eggplant into yellow basket,"Into yellow basket, put eggplant",False,,120,2026-01-22T08:11:18.115084,19,distance_to_target unavailable
+60,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,False,,120,2026-01-22T08:11:44.388992,0,distance_to_target unavailable
+61,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:12:12.496532,1,distance_to_target unavailable
+62,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,True,,52,2026-01-22T08:12:33.037239,2,distance_to_target unavailable
+63,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:12:58.808849,3,distance_to_target unavailable
+64,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,True,,35,2026-01-22T08:13:18.022820,4,distance_to_target unavailable
+65,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,False,,120,2026-01-22T08:13:44.178623,5,distance_to_target unavailable
+66,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:14:10.194134,6,distance_to_target unavailable
+67,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,True,,50,2026-01-22T08:14:32.697141,7,distance_to_target unavailable
+68,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,True,,49,2026-01-22T08:14:53.253766,8,distance_to_target unavailable
+69,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,True,,100,2026-01-22T08:15:18.285938,9,distance_to_target unavailable
+70,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:15:44.542314,10,distance_to_target unavailable
+71,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,False,,120,2026-01-22T08:16:10.793459,11,distance_to_target unavailable
+72,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,True,,53,2026-01-22T08:16:31.558298,12,distance_to_target unavailable
+73,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,True,,53,2026-01-22T08:16:52.781370,13,distance_to_target unavailable
+74,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:17:21.034023,14,distance_to_target unavailable
+75,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:17:47.689151,15,distance_to_target unavailable
+76,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,True,,63,2026-01-22T08:18:09.112034,16,distance_to_target unavailable
+77,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,deposit eggplant into yellow basket,False,,120,2026-01-22T08:18:35.600565,17,distance_to_target unavailable
+78,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:19:01.459162,18,distance_to_target unavailable
+79,widowx_put_eggplant_in_basket,formal_informal,put eggplant into yellow basket,place eggplant into yellow basket,False,,120,2026-01-22T08:19:27.556085,19,distance_to_target unavailable
+80,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:19:53.910467,0,distance_to_target unavailable
+81,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:20:22.586124,1,distance_to_target unavailable
+82,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:20:49.322610,2,distance_to_target unavailable
+83,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:21:15.362754,3,distance_to_target unavailable
+84,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:21:42.167976,4,distance_to_target unavailable
+85,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:22:08.537249,5,distance_to_target unavailable
+86,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:22:35.187202,6,distance_to_target unavailable
+87,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:23:01.696469,7,distance_to_target unavailable
+88,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:23:30.281621,8,distance_to_target unavailable
+89,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,True,,63,2026-01-22T08:23:51.998573,9,distance_to_target unavailable
+90,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:24:18.992693,10,distance_to_target unavailable
+91,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:24:45.223146,11,distance_to_target unavailable
+92,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,True,,41,2026-01-22T08:25:05.102157,12,distance_to_target unavailable
+93,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:25:30.983456,13,distance_to_target unavailable
+94,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:25:57.300181,14,distance_to_target unavailable
+95,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:26:23.651798,15,distance_to_target unavailable
+96,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:26:53.064928,16,distance_to_target unavailable
+97,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,drop off eggplant into yellow basket,False,,120,2026-01-22T08:27:19.347336,17,distance_to_target unavailable
+98,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:27:45.623585,18,distance_to_target unavailable
+99,widowx_put_eggplant_in_basket,verb_phrasing,put eggplant into yellow basket,set down eggplant into yellow basket,False,,120,2026-01-22T08:28:12.746705,19,distance_to_target unavailable
+100,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,False,,120,2026-01-22T08:28:39.161658,0,distance_to_target unavailable
+101,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,True,,43,2026-01-22T08:28:59.237498,1,distance_to_target unavailable
+102,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:29:26.655631,2,distance_to_target unavailable
+103,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:29:52.887843,3,distance_to_target unavailable
+104,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:30:22.174185,4,distance_to_target unavailable
+105,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,True,,45,2026-01-22T08:30:42.432970,5,distance_to_target unavailable
+106,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:31:09.009982,6,distance_to_target unavailable
+107,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,False,,120,2026-01-22T08:31:35.405373,7,distance_to_target unavailable
+108,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:32:02.143816,8,distance_to_target unavailable
+109,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,True,,39,2026-01-22T08:32:22.128564,9,distance_to_target unavailable
+110,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,True,,45,2026-01-22T08:32:42.356317,10,distance_to_target unavailable
+111,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,False,,120,2026-01-22T08:33:08.981808,11,distance_to_target unavailable
+112,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,True,,54,2026-01-22T08:33:33.030324,12,distance_to_target unavailable
+113,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,True,,35,2026-01-22T08:33:52.700199,13,distance_to_target unavailable
+114,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:34:19.169192,14,distance_to_target unavailable
+115,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:34:45.682739,15,distance_to_target unavailable
+116,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,False,,120,2026-01-22T08:35:12.008158,16,distance_to_target unavailable
+117,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put fresh eggplant into yellow basket,True,,50,2026-01-22T08:35:32.869704,17,distance_to_target unavailable
+118,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,False,,120,2026-01-22T08:35:59.785234,18,distance_to_target unavailable
+119,widowx_put_eggplant_in_basket,object_descriptors,put eggplant into yellow basket,put purple eggplant into yellow basket,True,,47,2026-01-22T08:36:20.263859,19,distance_to_target unavailable
+120,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:36:47.002380,0,distance_to_target unavailable
+121,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,35,2026-01-22T08:37:06.742881,1,distance_to_target unavailable
+122,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,54,2026-01-22T08:37:31.220276,2,distance_to_target unavailable
+123,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:37:57.606111,3,distance_to_target unavailable
+124,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:38:23.890691,4,distance_to_target unavailable
+125,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,45,2026-01-22T08:38:44.398652,5,distance_to_target unavailable
+126,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:39:10.910530,6,distance_to_target unavailable
+127,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:39:37.615970,7,distance_to_target unavailable
+128,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:40:03.930149,8,distance_to_target unavailable
+129,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,39,2026-01-22T08:40:24.171908,9,distance_to_target unavailable
+130,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,43,2026-01-22T08:40:44.731899,10,distance_to_target unavailable
+131,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:41:14.846675,11,distance_to_target unavailable
+132,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,42,2026-01-22T08:41:35.714694,12,distance_to_target unavailable
+133,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:42:02.380202,13,distance_to_target unavailable
+134,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:42:29.275242,14,distance_to_target unavailable
+135,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:42:56.754744,15,distance_to_target unavailable
+136,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,90,2026-01-22T08:43:20.965163,16,distance_to_target unavailable
+137,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,51,2026-01-22T08:43:42.305760,17,distance_to_target unavailable
+138,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,False,,120,2026-01-22T08:44:08.887382,18,distance_to_target unavailable
+139,widowx_put_eggplant_in_basket,directional_language,put eggplant into yellow basket,put eggplant into yellow basket toward the target.,True,,46,2026-01-22T08:44:29.744412,19,distance_to_target unavailable
+140,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:44:57.164276,0,distance_to_target unavailable
+141,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:45:28.538397,1,distance_to_target unavailable
+142,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:45:56.226363,2,distance_to_target unavailable
+143,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:46:23.221600,3,distance_to_target unavailable
+144,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:46:51.004328,4,distance_to_target unavailable
+145,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,True,,44,2026-01-22T08:47:11.843353,5,distance_to_target unavailable
+146,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:47:39.018081,6,distance_to_target unavailable
+147,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:48:06.407853,7,distance_to_target unavailable
+148,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:48:33.098090,8,distance_to_target unavailable
+149,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,True,,37,2026-01-22T08:48:53.943344,9,distance_to_target unavailable
+150,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,True,,38,2026-01-22T08:49:14.787249,10,distance_to_target unavailable
+151,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:49:42.211657,11,distance_to_target unavailable
+152,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,True,,83,2026-01-22T08:50:11.190194,12,distance_to_target unavailable
+153,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:50:38.216733,13,distance_to_target unavailable
+154,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:51:05.340977,14,distance_to_target unavailable
+155,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:51:33.042565,15,distance_to_target unavailable
+156,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:51:59.942759,16,distance_to_target unavailable
+157,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:52:27.507958,17,distance_to_target unavailable
+158,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:52:54.423394,18,distance_to_target unavailable
+159,widowx_put_eggplant_in_basket,temporal_modifiers,put eggplant into yellow basket,put eggplant into yellow basket right away.,False,,120,2026-01-22T08:53:22.194606,19,distance_to_target unavailable
+160,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,False,,120,2026-01-22T08:53:49.924304,0,distance_to_target unavailable
+161,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,True,,36,2026-01-22T08:54:10.331420,1,distance_to_target unavailable
+162,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T08:54:37.830919,2,distance_to_target unavailable
+163,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T08:55:09.337360,3,distance_to_target unavailable
+164,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T08:55:36.726756,4,distance_to_target unavailable
+165,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Make sure to put eggplant into yellow basket,False,,120,2026-01-22T08:56:04.305744,5,distance_to_target unavailable
+166,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Make sure to put eggplant into yellow basket,False,,120,2026-01-22T08:56:33.694343,6,distance_to_target unavailable
+167,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,False,,120,2026-01-22T08:57:01.164486,7,distance_to_target unavailable
+168,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T08:57:28.617603,8,distance_to_target unavailable
+169,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,True,,64,2026-01-22T08:57:52.175757,9,distance_to_target unavailable
+170,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Make sure to put eggplant into yellow basket,True,,41,2026-01-22T08:58:13.084719,10,distance_to_target unavailable
+171,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,False,,120,2026-01-22T08:58:40.772558,11,distance_to_target unavailable
+172,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,True,,46,2026-01-22T08:59:02.564953,12,distance_to_target unavailable
+173,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,True,,35,2026-01-22T08:59:23.445466,13,distance_to_target unavailable
+174,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T08:59:51.231885,14,distance_to_target unavailable
+175,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T09:00:23.907644,15,distance_to_target unavailable
+176,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Please remember to put eggplant into yellow basket,True,,41,2026-01-22T09:00:45.138224,16,distance_to_target unavailable
+177,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Make sure to put eggplant into yellow basket,False,,120,2026-01-22T09:01:12.781146,17,distance_to_target unavailable
+178,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Don't forget to put eggplant into yellow basket,False,,120,2026-01-22T09:01:40.443652,18,distance_to_target unavailable
+179,widowx_put_eggplant_in_basket,negation_positive,put eggplant into yellow basket,Make sure to put eggplant into yellow basket,False,,120,2026-01-22T09:02:08.545994,19,distance_to_target unavailable
+180,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:02:35.953666,0,distance_to_target unavailable
+181,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,51,2026-01-22T09:02:57.863417,1,distance_to_target unavailable
+182,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:03:28.101020,2,distance_to_target unavailable
+183,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,39,2026-01-22T09:03:49.677759,3,distance_to_target unavailable
+184,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:04:18.202890,4,distance_to_target unavailable
+185,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,65,2026-01-22T09:04:41.170400,5,distance_to_target unavailable
+186,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:05:09.221244,6,distance_to_target unavailable
+187,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:05:37.700031,7,distance_to_target unavailable
+188,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,41,2026-01-22T09:06:03.299412,8,distance_to_target unavailable
+189,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,53,2026-01-22T09:06:25.399461,9,distance_to_target unavailable
+190,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,41,2026-01-22T09:06:47.302112,10,distance_to_target unavailable
+191,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:07:14.663170,11,distance_to_target unavailable
+192,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:07:42.658369,12,distance_to_target unavailable
+193,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,41,2026-01-22T09:08:03.653073,13,distance_to_target unavailable
+194,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:08:31.123846,14,distance_to_target unavailable
+195,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:08:59.808049,15,distance_to_target unavailable
+196,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,41,2026-01-22T09:09:21.174562,16,distance_to_target unavailable
+197,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:09:49.488485,17,distance_to_target unavailable
+198,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,False,,120,2026-01-22T09:10:16.839278,18,distance_to_target unavailable
+199,widowx_put_eggplant_in_basket,complexity_variation,put eggplant into yellow basket,Carefully put eggplant into yellow basket,True,,47,2026-01-22T09:10:38.601752,19,distance_to_target unavailable
