@@ -55,7 +55,9 @@ weights/
 # Data directories (if large)
 data/results/
 *.csv
+!data/results/
 !data/results/.gitkeep
+!data/results/results_octo.csv
 
 # Environment variables
 .env
