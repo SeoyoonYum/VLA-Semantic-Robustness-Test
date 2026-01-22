@@ -24,7 +24,7 @@ The model weights (~15GB) are not in git. Download them:
 cd ~/VLA-Semantic-Robustness-Test
 
 # Install required dependencies first
-pip install huggingface_hub transformers bitsandbytes torch tqdm
+pip3 install huggingface_hub transformers bitsandbytes torch tqdm
 
 # Download the model
 python download_model.py
@@ -45,7 +45,7 @@ Since you're on Linux with CUDA, you can now install SIMPLER:
 cd SimplerEnv
 
 # Install numpy first (required version)
-pip install numpy==1.24.4
+pip install numpy==1.24
 
 # Install ManiSkill2_real2sim
 cd ManiSkill2_real2sim
@@ -70,7 +70,7 @@ For your research project, you'll need:
 ```bash
 # Core dependencies
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install transformers accelerate bitsandbytes sentencepiece
+pip install  accelerate  sentencepiece
 pip install timm  # For model verification
 
 # Scientific stack

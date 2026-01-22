@@ -11,6 +11,10 @@ from typing import Dict, Iterable, List, Optional
 
 import numpy as np
 
+# Avoid importing torch via transformers in Octo path (fixes cuDNN mismatch).
+os.environ.setdefault("TRANSFORMERS_NO_TORCH", "1")
+os.environ.setdefault("TRANSFORMERS_NO_PYTORCH", "1")
+os.environ.setdefault("USE_TORCH", "0")
 # JAX platform is configurable via CLI; default set in main().
 
 import simpler_env
