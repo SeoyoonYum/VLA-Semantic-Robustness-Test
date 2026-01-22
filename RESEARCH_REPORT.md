@@ -89,10 +89,28 @@ task goal, SR drops from 60% to 28.2% across mutations, with several categories
 approaching zero success. Future work should expand to multiple tasks and
 policies, enforce the manifesto alignment threshold, and add richer metrics.
 
-### 10. Reproducibility Notes
+### 10. Implementation and Environment (High-Level)
+To keep the focus on research outcomes while enabling replication, we summarize
+the coding and environment setup in non-technical terms:
+
+- **Code structure:** A small experiment runner executes trials, applies
+  instruction mutations, and appends results to a CSV after each episode.
+- **Configuration:** A single YAML file controls task selection, number of
+  trials (seeds), and basic runtime settings.
+- **Logging:** Runs produce a log file plus a results CSV used for analysis.
+- **Environment:** Experiments were run in the SIMPLER simulator with a fixed
+  camera and task configuration to avoid confounds.
+- **Model use:** The policy is loaded once per episode and queried to produce
+  actions based on the current observation and instruction.
+
+This lightweight setup was sufficient for the analysis here but could be
+extended with additional tasks, richer metrics, and improved automation.
+
+### 11. Reproducibility Notes
 - Config: `octo_experiment_config.yaml`
 - Runner: `run_octo_robustness.py`
 - Mutation generator: `mutation_generator.py`
 - Results: `data/results/results_octo.csv`
 
 
+github page link : https://github.com/SeoyoonYum/VLA-Semantic-Robustness-Test
