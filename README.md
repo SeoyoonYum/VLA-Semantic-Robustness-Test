@@ -4,7 +4,7 @@ Research project to quantify success rate degradation in vision-language-action 
 
 ## Overview
 
-This project evaluates how linguistic variations in task instructions affect the performance of OpenVLA-7B. We measure degradation in success rate when instructions are mutated using 10 different natural language transformation categories (synonyms, passive voice, spatial reordering, etc.) while maintaining semantic equivalence.
+This project evaluates how linguistic variations in task instructions affect the performance of octo-small. We measure degradation in success rate when instructions are mutated using 10 different natural language transformation categories (synonyms, passive voice, spatial reordering, etc.) while maintaining semantic equivalence.
 
 ## Research Question
 
@@ -60,8 +60,7 @@ See `RESEARCH_MANIFESTO.md` for complete project documentation, including:
 
 ## Model
 
-- **Model**: OpenVLA-7B
-- **Quantization**: 4-bit (bitsandbytes) - mandatory for 16GB VRAM constraint
+- **Model**: octo-small
 - **Simulator**: SIMPLER (SAPIEN-based)
 
 ## Status
@@ -78,5 +77,5 @@ See individual component licenses:
 
 If you use this work, please cite the relevant papers:
 - SimplerEnv: See `SimplerEnv/README.md`
-- OpenVLA: See model repository
+- Octo: See model repository
 
