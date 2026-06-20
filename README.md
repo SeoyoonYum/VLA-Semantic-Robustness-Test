@@ -4,7 +4,8 @@
 affects the success rate of a vision–language–action (VLA) policy, holding the policy
 weights and the visual scene fixed.
 
-📄 **[Read the paper (PDF)](paper.pdf)**  ·  DOI: *(add after Zenodo release — see below)*
+📄 **[Read the paper (PDF)](paper.pdf)**  ·  DOI: [![DOI](https://zenodo.org/badge/1135558723.svg)](https://doi.org/10.5281/zenodo.20777509)
+
 
 ---
 
