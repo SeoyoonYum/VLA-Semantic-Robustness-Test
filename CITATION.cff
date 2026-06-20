@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the technical report below."
+title: "Stress-Testing Semantic Robustness in Vision-Language-Action Policies"
+authors:
+  - family-names: "Yum"
+    given-names: "Seoyoon"
+url: "https://github.com/SeoyoonYum/VLA-Semantic-Robustness-Test"
+preferred-citation:
+  type: report
+  title: "Stress-Testing Semantic Robustness in Vision-Language-Action Policies"
+  authors:
+    - family-names: "Yum"
+      given-names: "Seoyoon"
+  year: 2026
+  notes: "Technical report."
+  # After the Zenodo release, uncomment and fill in:
+  # doi: "10.5281/zenodo.XXXXXXX"

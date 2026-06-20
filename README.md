@@ -1,81 +1,77 @@
-# VLA Semantic Robustness Stress Test
+# Stress-Testing Semantic Robustness in Vision–Language–Action Policies
 
-Research project to quantify success rate degradation in vision-language-action (VLA) models when task instructions are mutated using natural language transformations while maintaining semantic equivalence.
+**Technical report · 2026.** An empirical probe of how the *phrasing* of an instruction
+affects the success rate of a vision–language–action (VLA) policy, holding the policy
+weights and the visual scene fixed.
 
-## Overview
+📄 **[Read the paper (PDF)](paper.pdf)**  ·  DOI: *(add after Zenodo release — see below)*
 
-This project evaluates how linguistic variations in task instructions affect the performance of octo-small. We measure degradation in success rate when instructions are mutated using 10 different natural language transformation categories (synonyms, passive voice, spatial reordering, etc.) while maintaining semantic equivalence.
+---
 
-## Research Question
+## Summary
 
-How do linguistic variations in task instructions affect the performance of vision-language-action models? Specifically, we aim to measure the degradation in success rate when instructions are mutated using natural language transformations while maintaining semantic equivalence.
+We evaluate **Octo-Small** on the SIMPLER `widowx_put_eggplant_in_basket` task under a
+baseline instruction and ten programmatically generated, meaning-preserving instruction
+perturbations (**11 conditions × 20 seeds = 220 episodes**). Success rate falls from
+**60%** (baseline) to a **25%** mean across the perturbations.
 
-## Project Structure
+The interpretable signal is a split between **structural** and **additive** edits:
 
+- Genuinely reordering the sentence (`"Into yellow basket, put eggplant"`) collapses to **0%**.
+- Substituting the core action verb / preposition for a near-synonym is severe (**10–15%**).
+- Additive edits — descriptors, directional phrases, register, verbosity — are tolerated (**40–45%**).
+
+This is consistent with template-matching on canonical word order rather than semantic
+grounding. It is an **exploratory single-policy study, not a benchmark**. The
+`passive_voice` and `negation_positive` operators are templated approximations rather than
+true grammatical transformations, and their scores are **not** interpreted as evidence
+about those linguistic phenomena.
+
+## Repository layout
+
+| Path | What it is |
+|---|---|
+| `paper.pdf` | The technical report. |
+| `run_octo_robustness.py` | Config-driven experiment runner (baseline + mutations, calibration, logging). |
+| `mutation_generator.py` | Instruction-perturbation operators (10 families). |
+| `octo_experiment_config.yaml` | Task, seeds, action-scale sweep, step budget. |
+| `experiment_utils.py` | Logging / CSV helpers. |
+| `data/results/results_octo.csv` | Per-episode logs. |
+| `SimplerEnv/` | Vendored SIMPLER environment. |
+
+## Reproducing
+
+Setup: Octo-Small · `widowx_bridge` · third-person camera · ≤120 steps · action scale **0.75**
+(selected by a `{0.25, 0.5, 0.75, 1.0}` sweep) · sticky-gripper window 10 · fixed seeds 0–19.
+
+```bash
+python run_octo_robustness.py --config octo_experiment_config.yaml --phase all
 ```
-.
-├── RESEARCH_MANIFESTO.md          # Complete project documentation
-├── download_model.py               # Script to download OpenVLA-7B weights
-├── SimplerEnv/                    # SIMPLER simulator environment
-├── weights/                        # Model weights (not in git, too large)
-└── data/                          # Results and logs
-```
 
-## Quick Start
+The numbers in the paper correspond to the **final locked run** logged in
+`data/results/results_octo.csv`. Note that this file also accumulates earlier development
+runs across other tasks, so statistics computed over the whole file will differ from the
+per-condition run reported in the paper.
 
-### Prerequisites
-
-- Python 3.10 or 3.11
-- CUDA >= 11.8 and < 13 (for SIMPLER)
-- NVIDIA GPU with 16GB VRAM
-- Linux (required for SIMPLER, macOS not supported)
-
-### Installation
-
-1. **Download Model Weights:**
-   ```bash
-   python download_model.py
-   ```
-
-2. **Install SIMPLER Environment** (on Linux/CUDA system):
-   ```bash
-   cd SimplerEnv
-   bash install_linux.sh
-   ```
-   See `SimplerEnv/INSTALL_LINUX.md` for detailed instructions.
-
-### Usage
-
-See `RESEARCH_MANIFESTO.md` for complete project documentation, including:
-- Experiment design
-- Code standards
-- Success definitions
-- Data management
-
-## Key Features
-
-- **10 Linguistic Mutation Categories**: Synonyms, passive voice, spatial reordering, formal/informal, verb phrasing, object descriptors, directional language, temporal modifiers, negation/positive, complexity variation
-- **Quantitative Metrics**: Success rate and distance-to-target measurements
-- **Reproducible Framework**: Standardized experimental setup for VLA robustness testing
-
-## Model
-
-- **Model**: octo-small
-- **Simulator**: SIMPLER (SAPIEN-based)
-
-## Status
-
-Active Research Project - See `RESEARCH_MANIFESTO.md` for detailed status and progress.
-
-## License
-
-See individual component licenses:
-- SimplerEnv: See `SimplerEnv/LICENSE`
-- ManiSkill2_real2sim: See `SimplerEnv/ManiSkill2_real2sim/LICENSE`
+**Requirements:** Linux, CUDA GPU, Python 3.10/3.11. See `SimplerEnv/INSTALL_LINUX.md`.
 
 ## Citation
 
-If you use this work, please cite the relevant papers:
-- SimplerEnv: See `SimplerEnv/README.md`
-- Octo: See model repository
+See [`CITATION.cff`](CITATION.cff), or:
 
+```bibtex
+@techreport{yum2026vla,
+  title  = {Stress-Testing Semantic Robustness in Vision--Language--Action Policies},
+  author = {Yum, Seoyoon},
+  year   = {2026},
+  note   = {Technical report},
+  doi    = {10.5281/zenodo.XXXXXXX}
+}
+```
+
+*(Replace the DOI after the Zenodo release.)*
+
+## License
+
+- **Report (`paper.pdf`):** CC BY 4.0.
+- **Code:** see component licenses (`SimplerEnv/LICENSE`, `SimplerEnv/ManiSkill2_real2sim/LICENSE`).
